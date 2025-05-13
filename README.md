@@ -24,7 +24,15 @@ Bienvenido a la API para la gestión de productos y órdenes de un restaurante. 
 
 ## ⚙️ Instalación
 
+1. Clonar el repositorio
+  Primero, clona este repositorio en tu máquina local:
+```bash
+git clone https://github.com/NelsonValentinGarroDadan/ChallengeNeuralCodeIA.git
 ```
+2. Instalar dependencias
+  Entra en el directorio del proyecto y ejecuta el siguiente comando para instalar todas las dependencias necesarias:
+
+```bash
 npm install
 ```
 
