@@ -4,6 +4,23 @@
 Bienvenido a la API para la gestión de productos y órdenes de un restaurante. Este proyecto forma parte de un desafío técnico, y tiene como objetivo administrar un inventario de productos y permitir la creación de órdenes con validaciones de stock.
 
 ---
+ 
+## 🛠️ Tecnologías utilizadas
+- Node.js: Entorno de ejecución para JavaScript en el servidor.
+
+- Express.js: Framework web para construir APIs RESTful.
+
+- PostgreSQL: Sistema de gestión de bases de datos relacional.
+
+- pg: Cliente de PostgreSQL para Node.js.
+
+- Zod: Biblioteca para validación de datos en JavaScript/TypeScript.
+
+- Nodemon: Herramienta para desarrollo que reinicia automáticamente la aplicación cuando se detectan cambios.
+
+- Morgan: Middleware para registrar las solicitudes HTTP.
+
+---
 
 ## ⚙️ Instalación
 
@@ -36,7 +53,6 @@ PG_HOST=localhost
 
 # Puerto de conexión de la base de datos (por defecto 5432 para PostgreSQL)
 PG_PORT=5432
-
 ```
 
 ---
@@ -107,11 +123,17 @@ npm run start   # Ejecuta el proyecto en modo producción
 - `GET /orders/:id`  
   🔹 Muestra una orden específica por ID
 
-###  Seeder
-- `POST /seeder`
-  🔹 Precarga la base de datos con datos ficticios (productos y ordenes)
+---
+
+### 📦 Seeder
+
+- `POST /seeder`  
+  🔹 Precarga la base de datos con datos ficticios (productos y órdenes)
+
+---
 
 ## Ayuda para limpiar la base de datos
+
 ```bash
 -- Borrar todos los registros en orden correcto
 DELETE FROM order_items;
@@ -122,5 +144,4 @@ DELETE FROM products;
 ALTER SEQUENCE order_items_id_seq RESTART WITH 1;
 ALTER SEQUENCE orders_id_seq RESTART WITH 1;
 ALTER SEQUENCE products_id_seq RESTART WITH 1;
-
 ```
